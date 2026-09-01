@@ -15,7 +15,7 @@
 
 	<artifactId>cc-hongz-ztools-ai</artifactId>
 	<name>${project.artifactId}</name>
-	<description>AI模块（对齐 hutool-ai，LLM 调用封装：OpenAI/DeepSeek/Gemini/Grok/Ollama/豆包/Hutool）</description>
+	<description>AI模块（LLM 调用封装：OpenAI/DeepSeek/Gemini/Grok/Ollama/豆包）</description>
 
 	<properties>
 		<Automatic-Module-Name>cc.hongz.ztools.ai</Automatic-Module-Name>
