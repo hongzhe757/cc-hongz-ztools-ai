@@ -1,0 +1,7 @@
+cc.hongz.ztools.ai.model.deepseek.DeepSeekProvider
+cc.hongz.ztools.ai.model.doubao.DoubaoProvider
+cc.hongz.ztools.ai.model.gemini.GeminiProvider
+cc.hongz.ztools.ai.model.grok.GrokProvider
+cc.hongz.ztools.ai.model.hutool.HutoolProvider
+cc.hongz.ztools.ai.model.ollama.OllamaProvider
+cc.hongz.ztools.ai.model.openai.OpenaiProvider

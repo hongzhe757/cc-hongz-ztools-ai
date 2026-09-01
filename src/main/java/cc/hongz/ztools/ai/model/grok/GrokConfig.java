@@ -1,0 +1,59 @@
+/*
+ * Copyright (c) 2025 Hutool Team and hutool.cn
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+package cc.hongz.ztools.ai.model.grok;
+
+import cc.hongz.ztools.ai.Models;
+import cc.hongz.ztools.ai.core.BaseConfig;
+
+/**
+ * Grok配置类，初始化API接口地址，设置默认的模型。
+ *
+ * @author elichow
+ * @since 5.8.38
+ */
+@SuppressWarnings("checkstyle:MemberName")
+public class GrokConfig extends BaseConfig {
+
+    private final String API_URL = "https://api.x.ai/v1";
+
+    private final String DEFAULT_MODEL = Models.Grok.GROK_2_1212.getModel();
+
+
+    /**
+     * 构造。
+     */
+    public GrokConfig() {
+        setApiUrl(API_URL);
+        setModel(DEFAULT_MODEL);
+    }
+
+    /**
+     * 构造。
+     *
+     * @param apiKey API密钥
+     */
+    public GrokConfig(final String apiKey) {
+        this();
+        setApiKey(apiKey);
+    }
+
+    @Override
+    public String getModelName() {
+        return "grok";
+    }
+
+}
