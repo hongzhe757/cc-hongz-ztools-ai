@@ -140,6 +140,11 @@ public class OpenaiServiceImpl extends BaseAIService implements OpenaiService {
     }
 
     @Override
+    public String embedding(final String input) {
+        return embeddingText(input);
+    }
+
+    @Override
     public String moderations(final String text, final String imgUrl) {
         String paramJson = buileModerationsRequestBody(text, imgUrl);
         final HttpResponse response = sendPost(MODERATIONS, paramJson);

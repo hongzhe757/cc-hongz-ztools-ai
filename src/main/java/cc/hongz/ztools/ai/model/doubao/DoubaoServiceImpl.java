@@ -121,6 +121,11 @@ public class DoubaoServiceImpl extends BaseAIService implements DoubaoService {
     }
 
     @Override
+    public String embedding(final String input) {
+        return embeddingText(new String[]{input});
+    }
+
+    @Override
     public String embeddingVision(final String text, final String image) {
         String paramJson = buildEmbeddingVisionRequestBody(text, image);
         final HttpResponse response = sendPost(EMBEDDING_VISION, paramJson);

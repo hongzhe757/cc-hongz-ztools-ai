@@ -123,6 +123,11 @@ public class OllamaServiceImpl extends BaseAIService implements OllamaService {
     }
 
     @Override
+    public String embedding(final String input) {
+        return embeddings(input);
+    }
+
+    @Override
     public String listModels() {
         final HttpResponse response = sendGet(LIST_MODELS_ENDPOINT);
         return response.body();

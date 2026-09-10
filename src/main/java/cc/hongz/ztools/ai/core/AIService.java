@@ -72,4 +72,14 @@ public interface AIService {
      * @since 5.8.39
      */
     void chat(final List<Message> messages, final Consumer<String> callback);
+
+    /**
+     * 文本向量化。
+     *
+     * @param input 需要向量化的文本
+     * @return 向量信息（JSON 字符串）
+     */
+    default String embedding(final String input) {
+        throw new UnsupportedOperationException("当前模型不支持文本向量化");
+    }
 }
